@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-45-7qb" userLabel="Top Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBP-Qh-wj1" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="20" y="63" width="173" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZBP-Qh-wj1" secondAttribute="height" multiplier="1:1" id="sAs-vf-sXr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="sAs-vf-sXr"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-so-Kn9" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="407" y="63" width="173" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mb5-so-Kn9" secondAttribute="height" multiplier="1:1" id="aua-vC-qTg"/>
+                                            <constraint firstAttribute="width" secondItem="mb5-so-Kn9" secondAttribute="height" multiplier="1:1" id="xV3-w0-P9x"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="aua-vC-qTg"/>
+                                                <exclude reference="xV3-w0-P9x"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-3c-m4r" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="213" y="63" width="174" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rqH-3c-m4r" secondAttribute="height" multiplier="1:1" id="BAG-gJ-u9t"/>
+                                            <constraint firstAttribute="width" secondItem="rqH-3c-m4r" secondAttribute="height" multiplier="1:1" id="fGf-Qv-eEs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fGf-Qv-eEs"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.77275458919999995" blue="0.61675997100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mb5-so-Kn9" secondAttribute="trailing" constant="192" id="2VX-k5-Y9o"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="top" secondItem="fHn-45-7qb" secondAttribute="top" priority="750" constant="50" id="9Er-UC-lnP"/>
+                                    <constraint firstItem="ZBP-Qh-wj1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fHn-45-7qb" secondAttribute="leading" constant="20" id="AAD-W2-GEu"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="leading" secondItem="ZBP-Qh-wj1" secondAttribute="trailing" constant="20" id="Dk6-vY-VeE"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="centerY" secondItem="fHn-45-7qb" secondAttribute="centerY" id="MTm-u4-o26"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="centerY" secondItem="rqH-3c-m4r" secondAttribute="centerY" id="OQV-Nz-7Hp"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="height" secondItem="rqH-3c-m4r" secondAttribute="height" id="PD6-sD-g9q"/>
+                                    <constraint firstItem="ZBP-Qh-wj1" firstAttribute="leading" secondItem="fHn-45-7qb" secondAttribute="leading" constant="8" id="U5M-Qk-sdO"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="width" secondItem="ZBP-Qh-wj1" secondAttribute="width" id="Vna-WO-Ivq"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="leading" secondItem="rqH-3c-m4r" secondAttribute="trailing" constant="20" id="VvD-d3-wST"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="width" secondItem="rqH-3c-m4r" secondAttribute="height" multiplier="1:1" id="ZkL-0G-qAR"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="leading" secondItem="rqH-3c-m4r" secondAttribute="trailing" constant="54" id="a9B-hl-2ZG"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="width" secondItem="rqH-3c-m4r" secondAttribute="width" id="aco-jp-kLT"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="centerX" secondItem="fHn-45-7qb" secondAttribute="centerX" id="fir-JQ-khP"/>
+                                    <constraint firstItem="mb5-so-Kn9" firstAttribute="width" secondItem="mb5-so-Kn9" secondAttribute="height" multiplier="1:1" id="k3h-me-ioZ"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="leading" secondItem="ZBP-Qh-wj1" secondAttribute="trailing" constant="46" id="qbw-fe-sZS"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fHn-45-7qb" secondAttribute="top" constant="20" id="qsB-iB-sEv"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mb5-so-Kn9" secondAttribute="trailing" constant="20" id="rrs-8H-fEW"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="height" secondItem="ZBP-Qh-wj1" secondAttribute="height" id="ryw-iX-LVs"/>
+                                    <constraint firstItem="rqH-3c-m4r" firstAttribute="centerY" secondItem="ZBP-Qh-wj1" secondAttribute="centerY" id="xMI-2e-ihg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="U5M-Qk-sdO"/>
+                                        <exclude reference="ZkL-0G-qAR"/>
+                                        <exclude reference="qbw-fe-sZS"/>
+                                        <exclude reference="2VX-k5-Y9o"/>
+                                        <exclude reference="a9B-hl-2ZG"/>
+                                        <exclude reference="k3h-me-ioZ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLG-LQ-XsD" userLabel="Bottom Container View">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Os-iR-jEl" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="20" y="63" width="173" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9Os-iR-jEl" secondAttribute="height" multiplier="1:1" id="jqb-cD-RR0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jqb-cD-RR0"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGx-F2-Pes" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="213" y="63" width="174" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uGx-F2-Pes" secondAttribute="height" multiplier="1:1" id="4l4-rr-AuW"/>
+                                            <constraint firstAttribute="width" secondItem="uGx-F2-Pes" secondAttribute="height" multiplier="1:1" id="peg-ad-Wus"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="peg-ad-Wus"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-xu-rjh" customClass="GDLoadingIndicator">
+                                        <rect key="frame" x="407" y="63" width="173" height="174"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7mN-xu-rjh" secondAttribute="height" multiplier="1:1" id="28b-72-Jyb"/>
+                                            <constraint firstAttribute="width" secondItem="7mN-xu-rjh" secondAttribute="height" multiplier="1:1" id="Ows-bl-sTc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleType">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleAnimationType">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillerAnimationType">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="28b-72-Jyb"/>
+                                                <exclude reference="Ows-bl-sTc"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44045017479999998" green="0.88057255239999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7mN-xu-rjh" secondAttribute="trailing" constant="20" id="0zx-3R-wFT"/>
+                                    <constraint firstItem="9Os-iR-jEl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kLG-LQ-XsD" secondAttribute="leading" constant="20" id="Kod-Yn-cNw"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="width" secondItem="9Os-iR-jEl" secondAttribute="width" id="O0H-NQ-XUF"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="centerY" secondItem="uGx-F2-Pes" secondAttribute="centerY" id="PAe-9i-GYZ"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="height" secondItem="9Os-iR-jEl" secondAttribute="height" id="ZBW-W1-WEe"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="height" secondItem="uGx-F2-Pes" secondAttribute="height" id="ZHP-X9-psv"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="leading" secondItem="uGx-F2-Pes" secondAttribute="trailing" constant="54" id="aKX-8q-DMn"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="centerX" secondItem="kLG-LQ-XsD" secondAttribute="centerX" id="aVe-eb-D8m"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="centerY" secondItem="9Os-iR-jEl" secondAttribute="centerY" id="aeC-jp-Xat"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="width" secondItem="uGx-F2-Pes" secondAttribute="height" multiplier="1:1" id="cdX-Mx-2B7"/>
+                                    <constraint firstAttribute="trailing" secondItem="7mN-xu-rjh" secondAttribute="trailing" constant="192" id="dtD-8u-bx3"/>
+                                    <constraint firstItem="9Os-iR-jEl" firstAttribute="leading" secondItem="kLG-LQ-XsD" secondAttribute="leading" constant="8" id="fES-1v-OsM"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="width" secondItem="uGx-F2-Pes" secondAttribute="width" id="fG9-GU-bRA"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="width" secondItem="7mN-xu-rjh" secondAttribute="height" multiplier="1:1" id="fNq-bW-FZz"/>
+                                    <constraint firstItem="7mN-xu-rjh" firstAttribute="leading" secondItem="uGx-F2-Pes" secondAttribute="trailing" constant="20" id="koo-ID-EIH"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="leading" secondItem="9Os-iR-jEl" secondAttribute="trailing" constant="20" id="l3S-uP-jmr"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="centerY" secondItem="kLG-LQ-XsD" secondAttribute="centerY" id="qqH-uH-7zc"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kLG-LQ-XsD" secondAttribute="top" constant="20" id="v9b-Ru-713"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="leading" secondItem="9Os-iR-jEl" secondAttribute="trailing" constant="46" id="zBF-ve-KYv"/>
+                                    <constraint firstItem="uGx-F2-Pes" firstAttribute="top" secondItem="kLG-LQ-XsD" secondAttribute="top" priority="750" constant="50" id="zqa-tX-kuJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fES-1v-OsM"/>
+                                        <exclude reference="cdX-Mx-2B7"/>
+                                        <exclude reference="zBF-ve-KYv"/>
+                                        <exclude reference="aKX-8q-DMn"/>
+                                        <exclude reference="dtD-8u-bx3"/>
+                                        <exclude reference="fNq-bW-FZz"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fHn-45-7qb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3y5-TJ-BsD"/>
+                            <constraint firstAttribute="trailing" secondItem="kLG-LQ-XsD" secondAttribute="trailing" id="6EV-RS-d2y"/>
+                            <constraint firstItem="kLG-LQ-XsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HHY-3q-qZi"/>
+                            <constraint firstItem="kLG-LQ-XsD" firstAttribute="height" secondItem="fHn-45-7qb" secondAttribute="height" id="RxZ-ON-Dzd"/>
+                            <constraint firstAttribute="trailing" secondItem="fHn-45-7qb" secondAttribute="trailing" id="e6s-bd-fdB"/>
+                            <constraint firstItem="fHn-45-7qb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fpA-rU-Y61"/>
+                            <constraint firstAttribute="bottom" secondItem="kLG-LQ-XsD" secondAttribute="bottom" id="h6T-CW-Wq3"/>
+                            <constraint firstItem="kLG-LQ-XsD" firstAttribute="top" secondItem="fHn-45-7qb" secondAttribute="bottom" id="pO0-nS-Dsx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator_1" destination="ZBP-Qh-wj1" id="jvQ-JG-cL2"/>
+                        <outlet property="loadingIndicator_2" destination="rqH-3c-m4r" id="9y2-d2-H5e"/>
+                        <outlet property="loadingIndicator_3" destination="mb5-so-Kn9" id="s9n-hj-7fd"/>
+                        <outlet property="progressIndicator_1" destination="9Os-iR-jEl" id="3Ml-nK-bO3"/>
+                        <outlet property="progressIndicator_2" destination="uGx-F2-Pes" id="ykT-P9-K3O"/>
+                        <outlet property="progressIndicator_3" destination="7mN-xu-rjh" id="wfk-zm-5al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
